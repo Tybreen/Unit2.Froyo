@@ -1,6 +1,6 @@
-let input = prompt(`Enter your flavors with a comma in between them`);
+const input = prompt(`Enter your flavors with a comma in between them`);
 
-input = input.split(`,`);
+const inputSplit = input.split(`,`);
 
 const findUniqueItems = (order) => {
   // finds unique items
@@ -29,6 +29,6 @@ const calculateOrder = (order) => {
   return orderOutput;
 }
 
-const yourOrder = calculateOrder(input);
+const yourOrder = calculateOrder(inputSplit);
 
 console.table(yourOrder);
